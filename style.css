@@ -1,3 +1,5 @@
+
+
 /*
 Theme Name: Twenty Seventeen
 Theme URI: https://wordpress.org/themes/twentyseventeen/
@@ -1354,7 +1356,9 @@ a:hover .nav-title,
 
 .navigation-top .current-menu-item > a,
 .navigation-top .current_page_item > a {
-	color: #767676;
+  /* background: #ffffb3;
+	border-radius: 1em; */
+	
 }
 
 .main-navigation {
@@ -1609,11 +1613,11 @@ body {
 	text-transform: uppercase;
 }
 
-.site-title,
+/* .site-title,
 .site-title a {
 	color: #222;
 	opacity: 1; /* Prevent opacity from changing during selective refreshes in the customize preview */
-}
+} */
 
 body.has-header-image .site-title,
 body.has-header-video .site-title,
@@ -1664,17 +1668,48 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	vertical-align: middle;
 }
 
+/* 2022-05-09 _vp_ */
 .site-branding {
-	position: relative;
-  background: #126ab2 url('./assets/images/seamless-clouds.jpg') repeat-x;
+	position: relative;	
+	
+	background: #eca813 url('https://s3.amazonaws.com/ish-wp/wp-content/uploads/2022/05/09184728/186x256_column_yellow.png') repeat-x;
+	
   background-position: center bottom;
-  min-height: 250px;
+	height: 256px;
+  
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: black;
+}
+.site-branding .site-title {
+
+	background-image: linear-gradient(-15deg, #eca813, #eca813, #ffff99);
+	border-radius: 1em 0 0 0;
+	
+	
+	letter-spacing: 0.5em;
+	padding: 0.5em 1em;
+	margin-bottom: 0.2em;
+	
+}
+.site-branding .site-title a {
+	
+	color: #ffffb3;
+	text-shadow: 4px 4px #4d4d4d;
+}
+.site-branding .site-description {
+	
+	background-image: linear-gradient(-45deg, #eca813, #eca813, #ffff99);
+	
+	letter-spacing: 0.25em;
+	padding: 0.5em 1em;
+
+	color: #ffffb3;
+	text-shadow: 2px 2px #4d4d4d;
+
 }
 
 .has-header-image.twentyseventeen-front-page .custom-header,
@@ -1906,6 +1941,7 @@ ul#top-menu {
 
 .site-content {
 	padding: 2.5em 0 0;
+	background: #f5e68f;
 }
 
 /*--------------------------------------------------------------
@@ -2329,17 +2365,21 @@ body:not(.twentyseventeen-front-page) .entry-header {
 	margin-bottom: 3em;
 }
 
+
+
 /*--------------------------------------------------------------
 13.6 Footer
 --------------------------------------------------------------*/
 
 .site-footer {
 	/* border-top: 1px solid #eee; */
-  min-height: 200px;
+  
+	min-height: 340px;
 
-  background: url('./assets/images/cross-grass-1.jpg') repeat-x center bottom ;
-  background-size: 200px;
-  padding-bottom: 2em;
+  /* background: url('./assets/images/cross-grass-1.jpg') repeat-x center bottom ; */
+	background: url('https://s3.amazonaws.com/ish-wp/wp-content/uploads/2022/05/09211556/floating-island-left.png') no-repeat 200px bottom,
+	  url('https://s3.amazonaws.com/ish-wp/wp-content/uploads/2022/05/09211557/floating-island-right.png') no-repeat right 100px bottom 
+		#eca813;
 }
 
 .site-footer .wrap {
@@ -3502,9 +3542,14 @@ p > object:only-child {
 		font-size: 1rem;
 	}
 
-	/* Navigation */
+	/* 
+	 * Navigation 
+   * 2022-05-09 _vp_
+	 */
 
 	.navigation-top {
+		background: #eace2f;
+
 		bottom: 0;
 		font-size: 14px;
 		font-size: 0.875rem;
@@ -3850,6 +3895,10 @@ p > object:only-child {
 	.post-navigation {
 		clear: both;
 	}
+	.post-navigation a, 
+	.post-navigation a span {
+		box-shadow: none;
+	}
 
 	.post-navigation .nav-previous {
 		float: left;
@@ -3882,6 +3931,18 @@ p > object:only-child {
 	body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
 		float: left;
 		width: 36%;
+	}
+
+	article {
+		background: #f5f9b3;
+		border: 2px solid gray;
+		border-radius: 5px;
+		box-shadow: 5px 10px #888888;
+		padding: 0.5em;
+		margin-bottom: 1em;
+	}
+	article .entry-content {
+		padding: 1.5em;
 	}
 
 	.blog:not(.has-sidebar) #primary article,
@@ -4064,7 +4125,7 @@ p > object:only-child {
 		font-size: 14px;
 		font-size: 0.875rem;
 		line-height: 1.6;
-		margin-top: 3em;
+		padding-top: 20px;
 	}
 
 	.site-footer .widget-column.footer-widget-1 {
@@ -4075,6 +4136,10 @@ p > object:only-child {
 	.site-footer .widget-column.footer-widget-2 {
 		float: right;
 		width: 58%;
+	}
+	.site-footer .widget-column.footer-widget-2 a {
+		box-shadow: none;
+		color: white;
 	}
 
 	.social-navigation {
@@ -4332,7 +4397,7 @@ p > object:only-child {
 		background: none !important; /* Brute force since user agents all print differently. */
 	}
 
-	body,
+	/* body,
 	a,
 	.site-title a,
 	.twentyseventeen-front-page.has-header-image .site-title,
@@ -4340,7 +4405,7 @@ p > object:only-child {
 	.twentyseventeen-front-page.has-header-image .site-title a,
 	.twentyseventeen-front-page.has-header-video .site-title a {
 		color: #222 !important; /* Make sure color schemes don't affect to print */
-	}
+	} */
 
 	h2,
 	h5,

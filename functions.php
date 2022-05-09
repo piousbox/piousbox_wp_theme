@@ -1,17 +1,14 @@
 <?php
 /**
- * Twenty Seventeen functions and definitions
+ * Piousbox Modified WP Theme functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- */
+**/
 
 /**
- * Twenty Seventeen only works in WordPress 4.7 or later.
- */
+ * Works in WordPress 4.7 or later.
+**/
 if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
 	return;
@@ -58,8 +55,7 @@ function twentyseventeen_setup() {
 	// Set the default content width.
 	$GLOBALS['content_width'] = 525;
 
-	// This theme uses wp_nav_menu() in two locations.
-  // or three... _vp_
+	// This theme uses wp_nav_menu() in two or three locations. 2020-02-18 _vp_
 	register_nav_menus(
 		array(
 			'top'    => __( 'Top Menu', 'twentyseventeen' ),
@@ -491,6 +487,7 @@ function twentyseventeen_scripts() {
 	}
 
   // 20200218 piousbox
+	// 2022-05-09 _vp_
   wp_enqueue_script( 'script', get_theme_file_uri( '/assets/js/script.js' ), array( 'jquery' ), '2.1.2', true );
 
 }
