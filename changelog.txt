@@ -1,4 +1,5 @@
 0.1.0 - 20200104 works for pi2-wp
 0.1.1 - 20200104 diverge from bjjc, do not display catlist in categories.
 0.3.0 - 2022-05-09 - yellow, boxed. pixel art and floating islands.
+        2022-05-16 - added paladin
 
