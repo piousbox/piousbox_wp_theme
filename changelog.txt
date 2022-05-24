@@ -1,3 +1,4 @@
 0.1.0 - 20200104 works for pi2-wp
 0.1.1 - 20200104 diverge from bjjc, do not display catlist in categories.
+master - 2022-05-24 - the current branch is 0.3.0, branch master is not used
 
