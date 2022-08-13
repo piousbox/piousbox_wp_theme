@@ -1358,7 +1358,7 @@ a:hover .nav-title,
 .navigation-top .current_page_item > a {
   /* background: #ffffb3;
 	border-radius: 1em; */
-	
+
 }
 
 .main-navigation {
@@ -1671,13 +1671,13 @@ body:not(.title-tagline-hidden) .site-branding-text {
 
 /* 2022-05-09 _vp_ */
 .site-branding {
-	position: relative;	
-	
+	position: relative;
+
 	background: #eca813 url('https://s3.amazonaws.com/ish-wp/wp-content/uploads/2022/05/09184728/186x256_column_yellow.png') repeat-x;
-	
+
   background-position: center bottom;
 	height: 256px;
-  
+
 
   display: flex;
   flex-direction: column;
@@ -1706,22 +1706,22 @@ body:not(.title-tagline-hidden) .site-branding-text {
 
 	background-image: linear-gradient(-15deg, #eca813, #eca813, #ffff99);
 	border-radius: 1em 0 0 0;
-	
-	
+
+
 	letter-spacing: 0.5em;
 	padding: 0.5em 1em;
 	margin-bottom: 0.2em;
-	
+
 }
 .site-branding .site-title a {
-	
+
 	color: #ffffb3;
 	text-shadow: 4px 4px #4d4d4d;
 }
 .site-branding .site-description {
-	
+
 	background-image: linear-gradient(-45deg, #eca813, #eca813, #ffff99);
-	
+
 	letter-spacing: 0.25em;
 	padding: 0.5em 1em;
 
@@ -2161,11 +2161,11 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 /* More tag */
 
-.entry-content .more-link:before {
+/* .entry-content .more-link:before {
 	content: "";
 	display: block;
 	margin-top: 1.5em;
-}
+} */
 
 /* Single Post */
 
@@ -2391,12 +2391,12 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .site-footer {
 	/* border-top: 1px solid #eee; */
-  
+
 	min-height: 340px;
 
   /* background: url('./assets/images/cross-grass-1.jpg') repeat-x center bottom ; */
 	background: url('https://s3.amazonaws.com/ish-wp/wp-content/uploads/2022/05/09211556/floating-island-left.png') no-repeat 200px bottom,
-	  url('https://s3.amazonaws.com/ish-wp/wp-content/uploads/2022/05/09211557/floating-island-right.png') no-repeat right 100px bottom 
+	  url('https://s3.amazonaws.com/ish-wp/wp-content/uploads/2022/05/09211557/floating-island-right.png') no-repeat right 100px bottom
 		#eca813;
 }
 
@@ -3560,8 +3560,8 @@ p > object:only-child {
 		font-size: 1rem;
 	}
 
-	/* 
-	 * Navigation 
+	/*
+	 * Navigation
    * 2022-05-09 _vp_
 	 */
 
@@ -3913,7 +3913,7 @@ p > object:only-child {
 	.post-navigation {
 		clear: both;
 	}
-	.post-navigation a, 
+	.post-navigation a,
 	.post-navigation a span {
 		box-shadow: none;
 	}
@@ -3960,7 +3960,7 @@ p > object:only-child {
 		margin-bottom: 1em;
 	}
 	article .entry-content {
-		padding: 1.5em;
+		/* padding: 1.5em; */
 	}
 
 	.blog:not(.has-sidebar) #primary article,
@@ -3977,7 +3977,8 @@ p > object:only-child {
 	.blog .site-main > article,
 	.archive .site-main > article,
 	.search .site-main > article {
-		padding-bottom: 4em;
+		padding-bottom: 1em;
+		margin-bottom: 2em;
 	}
 
 	.navigation.pagination {
@@ -4460,7 +4461,7 @@ p > object:only-child {
   Twitter: @planetabhi
   Dribbble: @planetabhi
 
-*********************************************************************************************/ 
+*********************************************************************************************/
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
