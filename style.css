@@ -1989,8 +1989,8 @@ ul#top-menu {
 .page-title,
 body.page:not(.twentyseventeen-front-page) .entry-title {
 	color: #222;
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 2em; /* 2022-08-13 To make category view look better */
+
 	font-weight: 800;
 	letter-spacing: 0.14em;
 	text-transform: uppercase;
@@ -3977,8 +3977,8 @@ p > object:only-child {
 	.blog .site-main > article,
 	.archive .site-main > article,
 	.search .site-main > article {
-		padding-bottom: 1em;
-		margin-bottom: 2em;
+		padding: 1em;
+		margin-bottom: 3em;
 	}
 
 	.navigation.pagination {
@@ -4075,7 +4075,8 @@ p > object:only-child {
 	.page.page-one-column .entry-header,
 	.twentyseventeen-front-page.page-one-column .entry-header,
 	.archive.page-one-column:not(.has-sidebar) .page-header {
-		margin-bottom: 4em;
+		/* 2022-08-13, Removed to make Category view look better. */
+		/* margin-bottom: 4em; */
 	}
 
 	.page:not(.home) #content {
