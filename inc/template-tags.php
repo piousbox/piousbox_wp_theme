@@ -4,9 +4,10 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
+ * @package piousbox_wp_theme
+ *
+ * 0.3.0 - 2022-08-13 - Move tags just below the title
+ *
  */
 
 if ( ! function_exists( 'twentyseventeen_posted_on' ) ) :
@@ -55,6 +56,28 @@ if ( ! function_exists( 'twentyseventeen_time_link' ) ) :
 	}
 endif;
 
+// The prefix is `pi`. _vp_ 2022-08-13
+if ( ! function_exists( 'pi_entry_header' ) ) :
+
+	function pi_entry_header() {
+
+		/* translators: used between list items, there is a space after the comma */
+		$separate_meta = __( ', ', 'twentyseventeen' );
+
+		// Get Categories for posts.
+		$categories_list = get_the_category_list( $separate_meta );
+
+		echo '<header class="entry-header">';
+		echo '<span class="cat-tags-links">';
+		if ( $categories_list && twentyseventeen_categorized_blog() ) {
+			echo '<span class="cat-links">' . twentyseventeen_get_svg( array( 'icon' => 'folder-open' ) ) . '<span class="screen-reader-text">' . __( 'Categories', 'twentyseventeen' ) . '</span>' . $categories_list . '</span>';
+		}
+		echo '</span>';
+		echo '</header> <!-- .entry-header -->';
+
+	}
+
+endif;
 
 if ( ! function_exists( 'twentyseventeen_entry_footer' ) ) :
 	/**
@@ -80,7 +103,7 @@ if ( ! function_exists( 'twentyseventeen_entry_footer' ) ) :
 				if ( ( $categories_list && twentyseventeen_categorized_blog() ) || $tags_list ) {
 					echo '<span class="cat-tags-links">';
 
-						// Make sure there's more than one category before displaying.
+					// Make sure there's more than one category before displaying.
 					if ( $categories_list && twentyseventeen_categorized_blog() ) {
 						echo '<span class="cat-links">' . twentyseventeen_get_svg( array( 'icon' => 'folder-open' ) ) . '<span class="screen-reader-text">' . __( 'Categories', 'twentyseventeen' ) . '</span>' . $categories_list . '</span>';
 					}
