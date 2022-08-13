@@ -50,10 +50,8 @@
 	<?php endif; ?>
 
 	<div class="entry-content">
-    
-    <?= the_subtitle(); ?>
 
-    <hr />
+    <?= the_subtitle(); ?>
 
 		<?php
 		/* translators: %s: Name of current post */
