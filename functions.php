@@ -618,3 +618,23 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+/* _vp_ 2022-09-24 */
+add_action( 'pre_get_posts',  'set_posts_per_page'  );
+function set_posts_per_page( $query ) {
+
+  global $wp_the_query;
+	// echo("$wp_the_query:");
+	// var_dump($wp_the_query->query['category_name'] === 'nft');
+	// var_dump($wp_the_query->query);
+
+
+  if ($wp_the_query->query['category_name'] === 'nft') {
+    $query->set( 'posts_per_page', 4 );
+  }
+  // elseif ( ( ! is_admin() ) && ( $query === $wp_the_query ) && ( $query->is_archive() ) ) {
+  //   $query->set( 'posts_per_page', 5 );
+  // }
+
+  return $query;
+}
