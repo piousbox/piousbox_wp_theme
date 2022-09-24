@@ -4606,6 +4606,11 @@ ul.column li {
   height: 0;
 }
 
+/* piousbox _vp_ 2022-09-24 */
+.entry-content ul,
+.entry-content ol {
+  margin-left: 2em;
+}
 
 /* categories-nft */
 
