@@ -8,7 +8,6 @@ $cat_name = 'nft';
 
 global $wp_query;
 $current_page = get_queried_object();
-$cat_count = get_category( $cat_name );
 $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 $query = new WP_Query(array(
   'posts_per_page' => 4,
@@ -23,7 +22,7 @@ $query = new WP_Query(array(
 <div class="wrap categories-nft">
 
   <header class="page-header"><?
-
+    $cat_count = get_category_by_slug( $cat_name );
     the_archive_title( '<h1 class="page-title" >', ' ('.$cat_count->count.') </h1>' );
     the_archive_description( '<div class="taxonomy-description">', '</div>' );
   ?></header>
