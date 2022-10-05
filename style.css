@@ -1960,6 +1960,7 @@ ul#top-menu {
 .site-content {
   padding: 2.5em 0 0;
   background: #f5e68f;
+  background-image: url("//d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2022/05/12111803/bg2-semitransparent-detail.png");
 }
 
 /*--------------------------------------------------------------
@@ -3974,16 +3975,14 @@ p > object:only-child {
     width: 36%;
   }
 
-  article {
-    background: #f5f9b3;
+  .site-main {
+    /* background: #f5f9b3; */
+    background: white;
     border: 2px solid gray;
     border-radius: 5px;
     box-shadow: 5px 10px #888888;
-    padding: 0.5em;
+    padding: 2em;
     margin-bottom: 1em;
-  }
-  article .entry-content {
-    /* padding: 1.5em; */
   }
 
   .blog:not(.has-sidebar) #primary article,
@@ -4629,3 +4628,33 @@ ul.column li {
   width: 45%;
 }
 
+
+.CategoryWidget .float-left {
+  padding-right: 0.5em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.c,
+.clear {
+  clear: both;
+}
+
+.full-width-images img {
+  width: 100%;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.are-you-human label::after {
+  content: " Please write the following word in the form: 'bubbalicious'";
+}
