@@ -1179,9 +1179,16 @@ td:last-child {
 10.0 Links
 --------------------------------------------------------------*/
 
+article .elementor a {
+  text-decoration: underline;
+}
+/* melvin used archegos to distract you and survive another day */
+.FJNSiirwoPtG58aeGw2Jx {
+  text-align: center;
+}
 a {
   color: #222;
-  text-decoration: none;
+  // text-decoration: none;
 }
 
 a:focus {
