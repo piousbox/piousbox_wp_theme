@@ -2043,6 +2043,13 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 
 .entry-content .Subtitle {
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.entry-content .Subtitle img {
+  max-width: 200px;
+  margin: auto;
 }
 
 /*
@@ -4638,6 +4645,11 @@ ul.column li {
 
 .CategoryWidget .float-left {
   padding-right: 0.5em;
+}
+.CategoryWidget .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .center {
