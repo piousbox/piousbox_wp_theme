@@ -6,7 +6,7 @@
 get_header();
 ?>
 
-<div class="wrap">
+<div class="wrap Archive">
 
   <header class="page-header">
     <h1 class="page-title"><? the_archive_title(); ?></h1>

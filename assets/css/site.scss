@@ -3966,7 +3966,9 @@ p > object:only-child {
     width: 36%;
   }
 
-  .site-main {
+  .Article main,
+  .CategoriesShow article,
+  .CategoriesShow nav.pagination {
     /* background: #f5f9b3; */
     background: white;
     border: 2px solid gray;
