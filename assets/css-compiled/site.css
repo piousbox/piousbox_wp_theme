@@ -2707,7 +2707,7 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
     float: left;
     width: 36%;
   }
-  .Article main, .CategoriesShow article, .CategoriesShow nav.pagination {
+  .Article main, .CategoriesShow article, .CategoriesShow nav.pagination, .Page article {
     /* background: #f5f9b3; */
     background: white;
     border: 2px solid gray;
