@@ -5,8 +5,8 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package piousbox_wp_theme
- */
-
+**/
+// $categories_list = get_the_category_list( ", " );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
