@@ -15,13 +15,9 @@ if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 }
 
 /**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
+ * _vp_ 2022-11-11
  */
-function twentyseventeen_setup() {
+function do_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed at WordPress.org. See: https://translate.wordpress.org/projects/wp-themes/twentyseventeen
@@ -34,6 +30,8 @@ function twentyseventeen_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	add_filter('do_redirect_guess_404_permalink', '__return_false');
+	add_filter('gutenberg_can_edit_post', '__return_false');
+  add_filter('use_block_editor_for_post', '__return_false');
 
 	/*
 	 * Let WordPress manage the document title.
@@ -227,7 +225,7 @@ function twentyseventeen_setup() {
 
 	add_theme_support( 'starter-content', $starter_content );
 }
-add_action( 'after_setup_theme', 'twentyseventeen_setup' );
+add_action( 'after_setup_theme', 'do_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
