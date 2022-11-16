@@ -4647,3 +4647,20 @@ ul.column li {
 .are-you-human label::after {
   content: " Please write the following word in the form: 'bubbalicious'";
 }
+
+/* Issue dec'22 */
+.elementor .i20221116-box {
+  position: relative;
+
+  h2 {
+    position: absolute;
+    bottom: 50px;
+    left: 250px;
+    text-align: left;
+  }
+
+  img {
+    border-radius: 20px;
+  }
+
+}
