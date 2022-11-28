@@ -1904,14 +1904,19 @@ h2.widget-title {
   padding: 0;
   margin: 4px 4px 0 0;
 }
+.wp-block-tag-cloud {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.wp-block-tag-cloud::before {
+  content: "Tag Cloud";
+}
 .tagcloud, .widget_tag_cloud, .wp_widget_tag_cloud {
   line-height: 1.5;
 }
 .widget .tagcloud a, .widget.widget_tag_cloud a, .wp_widget_tag_cloud a {
-  border: 1px solid #ddd;
   -webkit-box-shadow: none;
   box-shadow: none;
-  display: block;
   padding: 4px 10px 5px;
   position: relative;
   -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;
