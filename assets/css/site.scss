@@ -3974,8 +3974,9 @@ p > object:only-child {
   .Article main,
   .CategoriesShow article,
   .CategoriesShow nav.pagination,
+  .Archive article,
+  .Archive nav.pagination,
   .Page article, {
-    /* background: #f5f9b3; */
     background: white;
     border: 2px solid gray;
     border-radius: 5px;

@@ -29,6 +29,8 @@ function do_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
+	remove_theme_support( 'widgets-block-editor' );
+
 	add_filter('do_redirect_guess_404_permalink', '__return_false');
 	add_filter('gutenberg_can_edit_post', '__return_false');
   add_filter('use_block_editor_for_post', '__return_false');
