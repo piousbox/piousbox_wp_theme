@@ -57,12 +57,13 @@ function do_setup() {
 	// Set the default content width.
 	$GLOBALS['content_width'] = 525;
 
-	// This theme uses wp_nav_menu() in two or three locations. 2020-02-18 _vp_
+	// This theme uses wp_nav_menu() in several locations. 2020-02-18 _vp_
 	register_nav_menus(
 		array(
 			'top'    => __( 'Top Menu', 'twentyseventeen' ),
 			'social' => __( 'Social Links Menu', 'twentyseventeen' ),
       'top2'   => __( 'Top2 Menu', 'twentyseventeen' ),
+			'footer-tos' => __( 'Footer ToS Menu', 'twentyseventeen' ),
 		)
 	);
 

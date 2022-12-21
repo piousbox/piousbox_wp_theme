@@ -1605,25 +1605,34 @@ a.post-edit-link {
 }
 /* Site info */
 .site-info {
-  font-size: 14px;
-  font-size: 0.875rem;
-  margin-bottom: 1em;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.25);
 }
 .site-info a {
-  color: #666;
+  color: white;
 }
-.site-info .sep {
+.site-info ul {
+  list-style-type: none;
   margin: 0;
-  display: block;
-  visibility: hidden;
-  height: 0;
-  width: 100%;
 }
 .site-info span[role=separator] {
   padding: 0 0.2em 0 0.4em;
 }
 .site-info span[role=separator]::before {
   content: "/";
+}
+.site-info .menu-footer-tos-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.site-info .wrap {
+  height: 100%;
 }
 /*--------------------------------------------------------------
 14.0 Comments
@@ -2849,21 +2858,6 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
     margin-bottom: 0;
     width: 36%;
   }
-  .site-info {
-    float: left;
-    padding: 0.7em 0 0;
-    width: 58%;
-  }
-  .social-navigation + .site-info {
-    margin-left: 6%;
-  }
-  .site-info .sep {
-    margin: 0 0.5em;
-    display: inline;
-    visibility: visible;
-    height: auto;
-    width: auto;
-  }
   .gallery-columns-5 .gallery-item {
     max-width: 20%;
   }
@@ -2941,7 +2935,7 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
   /* Site Branding */
   /* Posts */
   /* Colors */
-  form, button, input, select, textarea, .navigation-top, .social-navigation, #secondary, .content-bottom-widgets, .header-image, .panel-image-prop, .icon-thumb-tack, .page-links, .edit-link, .post-navigation, .pagination.navigation, .comments-pagination, .comment-respond, .comment-edit-link, .comment-reply-link, .comment-metadata .edit-link, .pingback .edit-link, .site-footer aside.widget-area, .site-info {
+  form, button, input, select, textarea, .navigation-top, .social-navigation, #secondary, .content-bottom-widgets, .header-image, .panel-image-prop, .icon-thumb-tack, .page-links, .edit-link, .post-navigation, .pagination.navigation, .comments-pagination, .comment-respond, .comment-edit-link, .comment-reply-link, .comment-metadata .edit-link, .pingback .edit-link, .site-footer aside.widget-area {
     display: none !important;
   }
   .entry-footer, #comments, .site-footer, .single-featured-image-header {

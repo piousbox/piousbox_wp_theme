@@ -6,3 +6,4 @@
         2022-08-11 - slight improvement to styling of articles
 0.4.0 - 2022-09-24 - NFT's category displays better cards
         2022-11-28 - added tag cloud
+        2022-12-21 - added second footer, for ToS
