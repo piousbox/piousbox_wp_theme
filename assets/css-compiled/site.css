@@ -961,7 +961,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
   vertical-align: middle;
 }
 /* 2022-05-09 _vp_ */
-.site-branding {
+.site-branding-20220509 {
   position: relative;
   background: #eca813 url("https://s3.amazonaws.com/ish-wp/wp-content/uploads/2022/05/09184728/186x256_column_yellow.png") repeat-x;
   background-position: center bottom;
@@ -972,7 +972,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
   justify-content: center;
   color: black;
 }
-.site-branding::after {
+.site-branding-20220509::after {
   position: absolute;
   left: 260px;
   bottom: -18px;
@@ -984,23 +984,45 @@ body:not(.title-tagline-hidden) .site-branding-text {
   /* border: 1px solid black; */
   z-index: 5;
 }
-.site-branding .site-title {
+.site-branding-20220509 .site-title {
   background-image: linear-gradient(-15deg, #eca813, #eca813, #ffff99);
   border-radius: 1em 0 0 0;
   letter-spacing: 0.5em;
   padding: 0.5em 1em;
   margin-bottom: 0.2em;
 }
-.site-branding .site-title a {
+.site-branding-20220509 .site-title a {
   color: #ffffb3;
   text-shadow: 4px 4px #4d4d4d;
 }
-.site-branding .site-description {
+.site-branding-20220509 .site-description {
   background-image: linear-gradient(-45deg, #eca813, #eca813, #ffff99);
   letter-spacing: 0.25em;
   padding: 0.5em 1em;
   color: #ffffb3;
   text-shadow: 2px 2px #4d4d4d;
+}
+.site-branding-20230103 {
+  height: 450px;
+  background: #333 url("https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2023/01/02034054/700x450-columns.jpg") no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  padding-top: 100px;
+}
+.site-branding-20230103 a, .site-branding-20230103 p.site-description {
+  color: #dab22c;
+  letter-spacing: 15px;
+  background: #0b4e50;
+  padding: 0.3em;
+  border-radius: 1em 1em 0 0;
+}
+.site-branding-20230103 a {
+  text-shadow: 2px 2px 1px yellow;
+}
+.site-branding-20230103 p.site-description {
+  text-shadow: 1px 1px 0px yellow;
+  padding-bottom: 20px;
 }
 .has-header-image.twentyseventeen-front-page .custom-header, .has-header-video.twentyseventeen-front-page .custom-header, .has-header-image.home.blog .custom-header, .has-header-video.home.blog .custom-header {
   display: table;
@@ -1554,11 +1576,29 @@ a.post-edit-link {
 /*--------------------------------------------------------------
 13.6 Footer
 --------------------------------------------------------------*/
-.site-footer {
+.site-footer-202212 {
   /* border-top: 1px solid #eee; */
   min-height: 340px;
   /* background: url('./assets/images/cross-grass-1.jpg') repeat-x center bottom ; */
   background: url("https://s3.amazonaws.com/ish-wp/wp-content/uploads/2022/05/09211556/floating-island-left.png") no-repeat 200px bottom, url("https://s3.amazonaws.com/ish-wp/wp-content/uploads/2022/05/09211557/floating-island-right.png") no-repeat right 100px bottom #eca813;
+}
+.site-footer-202301 {
+  min-height: 340px;
+  /* background: url('./assets/images/cross-grass-1.jpg') repeat-x center bottom ; */
+  background: url("https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2023/01/04034826/400x385-floating-island-4-tiny.png") no-repeat 150px center, linear-gradient(#eba723, #90581d);
+}
+.site-footer-202301 ul.menu li {
+  background: rgba(0, 0, 0, 0.5);
+  padding-left: 20px;
+}
+.site-footer-202301 ul.menu li a {
+  color: white;
+}
+.site-footer-202301 p.wp-block-tag-cloud {
+  background: rgba(0, 0, 0, 0.5);
+}
+.site-footer-202301 p.wp-block-tag-cloud::before {
+  color: yellow;
 }
 .site-footer .wrap {
   padding-bottom: 1.5em;
@@ -1568,6 +1608,10 @@ a.post-edit-link {
 .site-footer .widget-area {
   padding-bottom: 2em;
   padding-top: 2em;
+}
+.site-footer .widget-column.footer-widget-2 a {
+  box-shadow: none;
+  color: white;
 }
 /* Social nav */
 .social-navigation {
@@ -2311,6 +2355,9 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
   .site-branding {
     padding: 3em 0;
   }
+  .site-branding-20230103 {
+    padding: 300px 0 0 0;
+  }
   .panel-content .wrap {
     padding-bottom: 2em;
     padding-top: 3.5em;
@@ -2847,10 +2894,6 @@ p > embed:only-child, p > iframe:only-child, p > object:only-child {
   .site-footer .widget-column.footer-widget-2 {
     float: right;
     width: 58%;
-  }
-  .site-footer .widget-column.footer-widget-2 a {
-    box-shadow: none;
-    color: white;
   }
   .social-navigation {
     clear: left;
