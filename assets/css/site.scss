@@ -1731,9 +1731,13 @@ body:not(.title-tagline-hidden) .site-branding-text {
   }
 }
 body.page-id-27,
-body.page-id-7200 {
-  #content {
-    background: url('https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2023/01/04035827/bg-2-tiny.png');
+body.page-id-7200,
+body.issue-jan23 {
+  #content.site-content {
+    background:
+      // url('https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2023/01/04041205/bg-4-tiny.png');
+      // url('https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2023/01/04041205/bg-5-tiny.png');
+      url('https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2023/01/04041717/bg-7-tiny.png');
     background-size: 240px;
   }
 }
