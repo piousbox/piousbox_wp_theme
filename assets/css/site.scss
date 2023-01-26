@@ -1288,7 +1288,7 @@ a:hover .nav-title,
 }
 
 /* Fixes linked images */
-.entry-content a img,
+.entry-content a img, // Interfered with ButtonCart20230114
 .comment-content a img,
 .widget a img {
   -webkit-box-shadow: 0 0 0 8px #fff;
@@ -4731,4 +4731,11 @@ ul.column li {
     border-radius: 20px;
   }
 
+}
+
+
+.20230114ButtonCart {
+  .icon img {
+    height: 42px;
+  }
 }

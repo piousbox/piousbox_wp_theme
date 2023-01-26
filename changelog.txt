@@ -9,3 +9,4 @@
         2022-12-21 - added second footer, for ToS
         2022-12-29 - added page-notice.php
 0.5.0 - 2023-01-03 - accommodating jan'23 issue, footer and header
+        2023-01-26 - registered wps_subtitle as a post meta

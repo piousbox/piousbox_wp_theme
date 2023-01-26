@@ -1,7 +1,7 @@
 
 <?
 /**
- * The template for displaying all pages
+ * Login errors?
 **/
 get_header();
 

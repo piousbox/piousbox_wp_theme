@@ -40,14 +40,14 @@ function do_setup() {
 	 * By adding theme support, we declare that this theme does not use a
 	 * hard-coded <title> tag in the document head, and expect WordPress to
 	 * provide it for us.
-	 */
+	**/
 	add_theme_support( 'title-tag' );
 
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-	 */
+	**/
 	add_theme_support( 'post-thumbnails' );
 
 	add_image_size( 'twentyseventeen-featured-image', 2000, 1200, true );
@@ -58,27 +58,21 @@ function do_setup() {
 	$GLOBALS['content_width'] = 525;
 
 	// This theme uses wp_nav_menu() in several locations. 2020-02-18 _vp_
-	register_nav_menus(
-		array(
-			'top'    => __( 'Top Menu', 'twentyseventeen' ),
-			'social' => __( 'Social Links Menu', 'twentyseventeen' ),
-      'top2'   => __( 'Top2 Menu', 'twentyseventeen' ),
-			'footer-tos' => __( 'Footer ToS Menu', 'twentyseventeen' ),
-		)
-	);
+	register_nav_menus(array( 'top'        => __( 'Top Menu', 'twentyseventeen' ),
+														'social'     => __( 'Social Links Menu', 'twentyseventeen' ),
+														'top2'       => __( 'Top2 Menu', 'twentyseventeen' ),
+														'footer-tos' => __( 'Footer ToS Menu', 'twentyseventeen' ),
+	) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
-	 */
-	add_theme_support(
-		'html5', array(
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		)
-	);
+	**/
+	add_theme_support('html5', array( 'comment-form',
+																		'comment-list',
+																		'gallery',
+																		'caption',
+	) );
 
 	/*
 	 * Enable support for Post Formats.
@@ -227,6 +221,16 @@ function do_setup() {
 	$starter_content = apply_filters( 'twentyseventeen_starter_content', $starter_content );
 
 	add_theme_support( 'starter-content', $starter_content );
+
+	register_post_meta(
+		'',
+		'wps_subtitle',
+		array(
+				'single'       => true,
+				'type'         => 'string',
+				'show_in_rest' => true,
+		)
+  );
 }
 add_action( 'after_setup_theme', 'do_setup' );
 
@@ -428,7 +432,7 @@ function twentyseventeen_colors_css_wrap() {
 	<style type="text/css" id="custom-theme-colors" <?php echo $customize_preview_data_hue; ?>>
 		<?php echo twentyseventeen_custom_colors_css(); ?>
 	</style>
-<?php
+<?
 }
 add_action( 'wp_head', 'twentyseventeen_colors_css_wrap' );
 
