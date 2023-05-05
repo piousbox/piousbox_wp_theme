@@ -392,18 +392,6 @@ function twentyseventeen_excerpt_more( $link ) {
 add_filter( 'excerpt_more', 'twentyseventeen_excerpt_more' );
 
 /**
- * Handles JavaScript detection.
- *
- * Adds a `js` class to the root `<html>` element when JavaScript is detected.
- *
- * @since Twenty Seventeen 1.0
- */
-function twentyseventeen_javascript_detection() {
-	echo "<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>\n";
-}
-add_action( 'wp_head', 'twentyseventeen_javascript_detection', 0 );
-
-/**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
 function twentyseventeen_pingback_header() {

@@ -1,0 +1,2 @@
+0.1.0 - 20200104 works for pi2-wp
+0.1.1 - 20200104 diverge from bjjc, do not display catlist in categories.

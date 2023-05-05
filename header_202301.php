@@ -1,49 +1,37 @@
-<?php
+<?
 /**
- * The header for the theme
+ * 202301 - The header for the theme
 **/
-
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js no-svg">
+<html <? language_attributes(); ?> class="js svg" >
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+  <meta charset="<? bloginfo( 'charset' ); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <? wp_head(); ?>
 
-<script data-ad-client="ca-pub-5283251584689528" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//analytics.wasya.co/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '3']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-
-<!-- OWA Tracker -->
-<script type="text/javascript">
-//<![CDATA[
-var owa_baseUrl = 'https://owa.wasya.co/';
-var owa_cmds = owa_cmds || [];
-owa_cmds.push(['setSiteId', 'a50e92e3da677381a7986a4d5f4354c4']); // piousbox_com
-owa_cmds.push(['trackPageView']);
-owa_cmds.push(['trackClicks']);
-(function() {
-    var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
-    owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
-    _owa.src = owa_baseUrl + 'modules/base/dist/owa.tracker.js';
-    var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
-}());
-//]]>
-</script>
-<!-- End OWA Tracker -->
-
-
-
-<?php wp_head(); ?>
 </head>
 
 <body class="issue-jan23 <?= join(" ", get_body_class()); ?>" >
 <div id="page" class="site">
-  <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
+  <a class="skip-link screen-reader-text" href="#content"><? _e( 'Skip to content', 'twentyseventeen' ); ?></a>
 
   <header id="masthead" class="site-header" role="banner">
-
     <div class="custom-header">
       <div class="custom-header-media">
         <? the_custom_header_markup(); /* This is currently empty */ ?>
@@ -68,18 +56,18 @@ owa_cmds.push(['trackClicks']);
 
     </div>
 
-    <?php if ( has_nav_menu( 'top' ) ) : ?>
+    <? if ( has_nav_menu( 'top' ) ) : ?>
       <div class="navigation-top">
         <div class="wrap">
-          <?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
-          <?php /* get_template_part( 'template-parts/navigation/navigation', 'top2' ); // menu2 */ ?>
+          <? get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+          <? /* get_template_part( 'template-parts/navigation/navigation', 'top2' ); // menu2 */ ?>
         </div><!-- .wrap -->
       </div><!-- .navigation-top -->
-    <?php endif; ?>
+    <? endif; ?>
 
   </header><!-- #masthead -->
 
-  <?php
+  <?
 
   /*
    * If a regular post or page, and not the front page, show the featured image.
